@@ -32,7 +32,7 @@
                     <div class="col-1">
                         <strong>
                             {% if user.is_authenticated %}
-                            <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+                            <form class="d-block" action="{% url 'post_like' post.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if liked %}
 
@@ -51,15 +51,15 @@
                             <span class="text-secondary"> {{ post.number_of_likes }}</span>
                             
                             {% if user.is_authenticated %}
-                            <form class="d-inline" action="{% url 'post_dislike' post.slug %}" method="POST">
+                            <form class="d-block" action="{% url 'post_dislike' post.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if disliked %}
 
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fa-regular fa-thumbs-down"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fa-solid fa-thumbs-down"></i></button>
 
                                 {% else %}
 
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fa-solid fa-thumbs-down"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fa-regular fa-thumbs-down"></i></button>
 
                                 {% endif %}
                             </form>

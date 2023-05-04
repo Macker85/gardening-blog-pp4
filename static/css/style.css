@@ -43,6 +43,16 @@ body {
     background-color: #F9FAFC;
 }
 
+/* Intro */
+
+.intro{
+    color: #445261;
+}
+
+.title{
+    padding-top: 2rem;
+}
+
 /* content */
 
 .card {
