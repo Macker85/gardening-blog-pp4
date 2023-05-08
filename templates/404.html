@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+<!-- Added this file for the MVP for page not found 404 -->
+{% block content %}
+<section class="container">
+    <h1>Error - page not found!</h1>
+    <img src="/static/images/404/dead-flower.jpeg" alt="flower burning">
+    <h2>click <a href="{% url 'home' %}">here</a> to go back to the home page</h2>
+</section>
+
+{%endblock%}

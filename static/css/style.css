@@ -11,10 +11,6 @@ body {
     color: #FFF;
 }
 
-.red-o {
-    color: #58e810;
-}
-
 .fab {
     color: #2c5b1a;
 }
@@ -133,6 +129,8 @@ body {
     margin-left: 5%;
     color: lightgray;
 }
+
+/* button responses */
 
 .btn-signup {
     background-color: #23BBBB;
