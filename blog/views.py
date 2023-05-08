@@ -77,7 +77,7 @@ class PostLike(View):
             post.likes.remove(request.user)
         else:
             post.likes.add(request.user)
-        
+
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
@@ -90,5 +90,5 @@ class PostDislike(View):
             post.dislikes.remove(request.user)
         else:
             post.dislikes.add(request.user)
-        
+
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
