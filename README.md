@@ -4,7 +4,7 @@
 
 **Developer: Paul McCormack**
 
-💻 [Visit live website]()
+💻 [Visit live website](https://gardening-blog.herokuapp.com/)
 
 
 
@@ -36,44 +36,36 @@
 
 ### About
 
-This Gardening blog is a website built to give users a place to go to get tips for domestice gardening. I got the idea for this from chatting to people that live near me that had a building interest in their gardens.
+This Gardening blog is a website built to give users a place to go to get tips for domestic gardening. I got the idea for this from tlking to people that live near me that had a building interest in their gardens.
 <hr>
 
 ### User Goals
 
-- To create a table booking
-- To be able to view edit and cancel bookings
-- To view menus, a blog and contact info
+- To find information on gardening relevant to me.
+- Create an account so I can engage with the community.
+- To be able to give feedback on the information I am reading with likes or dislikes.
+- To engage with the author through messaging.
+- Find a social aspect through social media links.
 
 ### Site Owner Goals
 
-- To provide a solution to allow users to book a table online
-- To attract more business with a well crafted site
-- Provide a modern application with an easy navigation
-- Fully responsive and accessible
+- To give a platform to people looking to share ideas.
+- To help people engage with eachother with dialogue and reactions.
+- Ensure ease of use with pagination.
+- Drive traffic to social media accounts.
 <hr>
 
 
 ## User Experience
 
-### Target Audience
-- Users that wish to book a table for a meal or a party with family and friends
-- Past and new customers for the business
-- Tourists visiting the area that are looking for a meal or a drink or both
-- Fans visiting the area for a sports event or a music concert
-- People employed in the area to eat and drink after work
-
 ### User Requirements and Expectations
 
-- Fully responsive
-- Accessible
-- A welcoming design
-- Social media
-- Contact information
-- Accessibility
+- Fully responsive with sign up and login ability.
+- Easily accessible and navigated.
+- A fresh and bright design.
+- Social media availability.
 
 ##### Back to [top](#table-of-contents)<hr>
-
 
 ## User Stories
 
@@ -1322,7 +1314,7 @@ WAVE was used to test the websites accessibility.
 
 ### Device Testing & Browser compatibility
 
-The site uses to test on various real world devices was [BrowserStack](https://ci-pp4-the-diplomat.herokuapp.com/)  
+<!-- The site uses to test on various real world devices was [BrowserStack](https://ci-pp4-the-diplomat.herokuapp.com/)  
 
 This allowed me to test on real devices and not just device emulators.
 
@@ -1350,7 +1342,7 @@ The following devices were used to test my site:
 
 <details><summary>Safari (Monteray v15.3 latest)</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/device-test-safari-monteray-15.3.PNG">
-</details>
+</details> -->
 
 
 ##### Back to [top](#table-of-contents)<hr>
@@ -1374,11 +1366,11 @@ The following devices were used to test my site:
 
 ### Heroku Deployment
 
-[Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
+<!-- [Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
 
-This application has been deployed from Github using Heroku. Here's how:
+This application has been deployed from Github using Heroku. Here's how: -->
 
-1. Create an account at heroku.com
+<!-- 1. Create an account at heroku.com
 <details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-01.PNG">
 </details>
@@ -1463,23 +1455,23 @@ I store mine in env.py
 18. Click on the link provided to access the application
 
 19. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
-<hr>
+<hr> -->
 
 ### Fork Repository
 To fork the repository by following these steps:
-1. Go to the GitHub repository
-2. Click on Fork button in upper right hand corner
+1. Go to the GitHub repository listed at the beginning of this README file.
+2. Click on Fork button in upper right hand corner.
 <hr>
 
 ### Clone Repository
-You can clone the repository by following these steps:
-1. Go to the GitHub repository 
-2. Locate the Code button above the list of files and click it 
-3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
-4. Open Git Bash
-5. Change the current working directory to the one where you want the cloned directory
-6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
-7.Press Enter to create your local clone.
+You can clone the repository with the following steps:
+1. Go to the GitHub repository.
+2. Locate the Code button above the list of files and click it.
+3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard.
+4. Open Git Bash.
+5. Change the current working directory to the one where you want the cloned directory.
+6. Type git clone and paste the URL from the clipboard
+7. Press Enter to create your local clone.
 
 ##### Back to [top](#table-of-contents)<hr>
 
@@ -1488,11 +1480,11 @@ You can clone the repository by following these steps:
 
 ### Images
 
-Images used were sourced from Pexels.com and an AI image generator (Dalle2) was used for an image with the permission from OpenAI
+Images were all soursed from https://www.pexels.com/
 
 ### Code
 
-Bootstrap dark navigation theme was used alongside boostrap classes and carousel
+Code was worked along side the Code institute "I think therefore I blog" walkthrough and modified to suit.
 
 ##### Back to [top](#table-of-contents)<hr>
 
@@ -1500,4 +1492,5 @@ Bootstrap dark navigation theme was used alongside boostrap classes and carousel
 
 ### Special thanks to the following:
 - Code Institute
-- My Mentor Mo Shami
+- My wife Ciara
+- My mentor Jack
