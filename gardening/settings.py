@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.sites',
+    'django.contrib.postgres',
+    'migration_fixer',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -55,6 +57,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'blog',
+    'bookings'
 ]
 
 SITE_ID = 1
