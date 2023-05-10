@@ -17,11 +17,11 @@
     </script>
     <script src="https://kit.fontawesome.com/c12a091464.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="shortcut icon" href="https://gardening-blog.herokuapp.com/favicon.png">
-    <link rel="manifest" href="../media/favicon/">
+    <link rel="manifest" href="../media/favicon/"> -->
 
 </head>
 
@@ -52,6 +52,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url '' %}">Bookings</a>
+                    </li>
                     {% endif %}
                 </ul>
                 <span class="navbar-message">
@@ -60,7 +63,7 @@
             </div>
         </div>
     </nav>
-
+    <!-- message alert -->
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
