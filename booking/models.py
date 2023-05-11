@@ -19,8 +19,9 @@ days = (
 )
 
 status_options = (
-    (0, 'Confirmation pending'),
-    (1, 'Booking Confirmed'),
+    ('Confirmation pending', 'Confirmation pending'),
+    ('Booking Confirmed', 'Booking Confirmed'),
+    ('Unavailable', 'Unavailable'),
 )
 
 
@@ -49,7 +50,7 @@ class Booking(models.Model):
     status = models.CharField(
         max_length=25,
         choices=status_options,
-        default=0
+        default='Confirmation pending'
         )
 
     class Meta:
