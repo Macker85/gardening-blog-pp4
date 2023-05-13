@@ -1,11 +1,11 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
 from .models import Booking
 from .forms import BookingForm
 
 
 class Facetime(View):
-    template_name = 'booking/'
+    template_name = 'bookings.html'
     success_message = 'I look forward to chatting with you!'
 
     def get(self, request, *args, **kwargs):
