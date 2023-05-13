@@ -22,7 +22,6 @@ class Contact(models.Model):
         max_length=50,
         default=""
         )
-    phone = PhoneNumberField(null=True)
     message = models.TextField()
 
     class Meta:
