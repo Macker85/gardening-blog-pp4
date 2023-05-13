@@ -7,7 +7,6 @@
 💻 [Visit live website](https://gardening-blog.herokuapp.com/)
 
 
-
 ## Table of Contents
   - [About](#about)
   - [User Goals](#user-goals)
