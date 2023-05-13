@@ -145,53 +145,30 @@ This Gardening blog is a website built to give users a place to go to get tips f
 
 ### Colours
 
-I chose dark colors to keep a theme of a dimly lit room as seen in a lot of espionage movies.
-Dark themes are popular so I wanted to keep the site on a dark theme and not overly bright.
+I choose light bright colours to make the site look fresh with some earthy colours that spported the theme of gardening.
 
 The colors I wanted to stay close to  [Coolors.co](https://coolors.co/)
 <details><summary>See colour pallet</summary>
-<img src="docs/coolors.png">
+
+![image of colour pallet](docs/colours/colours.png)
+
 </details>
 
 ### Fonts
 
- The fonts selected were from Google Fonts, Montserrat wits sans-serif as a backup font.
+ The fonts selected were from Google Fonts, Roboto and Lato with sans-serif as a backup font. These were chosen as they are popular across alot of sites and will give a feeling of familiarity.
 
 ### Structure
 
 #### Website pages
 
-The site was designed for the user to be familiar with the layout such as a navigation bar along the top of the pages and a hamburger menu button for smaller screen.
+The site was designed to have this feeling of familiarity for the user with the navigation bar along the top of the pages and a hamburger menu button for smaller screen.
 
-The footer contains all relevant social media links that the business has so the user can visit any social media site and follow the business there to expand the businesses followers, likes and shares.
-
-- The site consists of the following pages:
-  - Homepage with cards for the user to choose to book a table, view the food or drinks menu.
-  - Food menu has the current list of all available foods from the database sorted by starters, mains and desserts
-  - Drinks menu has the current list of all available drinks from the databse sorted by type
-  - Blog page has a paginated list of blogs posted by an admin or authorised user, 4 per page
-  - Blog expanded displays a blog the user has selected so they can read the blog, if they are logged in they can also leave a comment which will then need to be approved before it is displayed
-  - Book page allows registered users to book a table , guest count, date requested, time requested and table location
-  - My bookings displays all bookings for the user that they have made, bookings in the past are automatically expired
-  - Edit booking allows the user to change their date, time, table and guest count
-  - Cancel booking allows the user to cancel the booking which will then delete it from the database
-  - Contact us allows the user to send us a DM if the are registered, or they can contact us from the displayed email and phone number or visit the address listed.
-  - Login / Logout allows users to login to make bookings, view, edit, and delete bookings
-  - Register allows the user to regiser so they can use the booking system
-  - 404 error page to display if a 404 error is raised
-
-#### Database
-
-- Built with Python and the Django framework with a database of a Postgres for the deployed Heroku version(production)
-- Two database model shows all the fields stored in the database
-
-<details><summary>Show diagram</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/database-schema.PNG">
-</details>
+The footer contains all relevant social media links to increase popularity with usage and increase the traffic.
 
 
 ##### User Model
-The User Model contains the following:
+<!-- The User Model contains the following:
 - user_id
 - password
 - last_login
@@ -202,30 +179,7 @@ The User Model contains the following:
 - email
 - is_staff
 - is_active
-- date_joined
-
-##### FoodItem Model
-The FoodItem Model contains the following:
-- food_id
-- food_name
-- description
-- price
-- available
-
-##### DrinkItem Model
-The DrinkItem Model contains the following:
-- drink_id
-- drink_name
-- description
-- price
-- available
-
-##### Table Model
-The Table Model contains the following:
-- table_id (PrimaryKey)
-- table_name
-- max_seats
-- available
+- date_joined -->
 
 
 ##### Booking Model
@@ -271,13 +225,6 @@ The ContactUs Model contains the following:
 - body
 
 
-### Wireframes
-The wireframes were created using Balsamiq
-<details><summary></summary>
-<img src="docs/wireframes.png">
-</details>
-
-
 ## Technologies Used
 
 ### Languages & Frameworks
@@ -291,9 +238,8 @@ The wireframes were created using Balsamiq
 
 ### Libraries & Tools
 
-- [Am I Responsive](http://ami.responsivedesign.is/)
-- [Balsamiq](https://balsamiq.com/)
-- [Bootstrap v5.2](https://getbootstrap.com/)
+<!-- - [Am I Responsive](http://ami.responsivedesign.is/)
+- [Bootstrap v3.9](https://getbootstrap.com/)
 - [Cloudinary](https://cloudinary.com/)
 - [Favicon.io](https://favicon.io)
 - [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
@@ -311,7 +257,7 @@ The wireframes were created using Balsamiq
   - [JShint](https://jshint.com/)
   - [Pycodestyle(PEP8)](https://pypi.org/project/pycodestyle/)
   - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
-  - [Wave Validator](https://wave.webaim.org/)
+  - [Wave Validator](https://wave.webaim.org/) -->
 
 ##### Back to [top](#table-of-contents)
 
