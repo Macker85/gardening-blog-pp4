@@ -3,15 +3,56 @@
 
 {% block content %}
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-8 offset-md-2">
-            <h3 class="intro title">Welcome to your Gardening-blog</h3>
-            <p class="intro">If you would like to spend sometime please arrange a booking below</p>
-            <p class="intro">Please <a class="link" href="{% url 'account_signup' %}">sign-up</a> or <a class="link" href="{% url 'account_login' %}">login</a> so I have details to contact you.</p>
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 p-5 bg-darker rounded booking-card">
+                        <!-- Display if user is not logged in -->
+                        {% if not user.is_authenticated %}
+                        <h2>Message Us</h2>
+                        <p>Please login to slide into our DM's!</p>
+                        <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
+                                Page</a></button>
+                        {% else %}
+                        <!-- Display form if user is logged in-->
+                        {% if user.is_authenticated %}
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <h2 class="fw-bold mt-3">Send Message</h2>
+                                <hr>
+                            </div>
+                        </div>
+                        <form method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <!-- Contact form -->
+                            {{ contact_form| crispy }}
+
+                            <button class="btn btn-success" type="submit">Submit</button>
+                        </form>
+                        {% endif %}
+                        {% endif %}
+                        <!-- Form Errors from stack overflow -->
+                        {% if contact_form.errors %}
+                        {% for field in contact_form %}
+                        {% for error in field.errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endfor %}
+                        {% for error in contact_form.non_field_errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
 
 
