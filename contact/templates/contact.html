@@ -9,14 +9,14 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-12 p-5 bg-darker rounded booking-card">
-                        <!-- Display if user is not logged in -->
+                        <!-- If user is not logged in -->
                         {% if not user.is_authenticated %}
-                        <h2>Message Us</h2>
-                        <p>Please login to slide into our DM's!</p>
-                        <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
-                                Page</a></button>
+                        <h2>Get in touch</h2>
+                        <p>Please login or register.</p>
+                        <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login Page</a></button>
+                        <button class="btn btn-success" type="submit"><a href="{% url 'account_signup' %}">Create an account</a></button>
                         {% else %}
-                        <!-- Display form if user is logged in-->
+                        <!-- Form loads if user is logged in-->
                         {% if user.is_authenticated %}
                         <div class="row text-center">
                             <div class="col-12">

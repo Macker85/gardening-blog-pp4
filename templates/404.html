@@ -1,12 +1,12 @@
 {% extends "base.html" %}
-<!-- Added this file for the MVP for page not found 404 -->
+<!-- Added this for page not found 404 -->
 {% block content %}
 
-<section class="container col-md-8 offset-md-2">
-    <h1>Error - page not found!</h1>
+<section class="container-fluid col-md-8 offset-md-2">
+    <h1>404 - error! Page not found!</h1>
     <img src="https://res.cloudinary.com/djxlyewjo/image/upload/v1684183367/404_aktxaw.gif"
                 alt="404 page image - flowers burning" class="mx-auto p-3" style="max-width:80%;">
-    <h2>click <a href="{% url 'home' %}">here</a> to go back to the home page</h2>
+    <h3>click <a href="{% url 'home' %}">here</a> to go back to the home page</h3>
 </section>
 
 {%endblock%}

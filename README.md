@@ -168,7 +168,7 @@ The footer contains all relevant social media links to increase popularity with 
 - Django
 
 
-### Libraries & Tools
+### Libraries/Tools
 
 - [Am I Responsive](http://ami.responsivedesign.is/)
 - [Bootstrap v5](https://getbootstrap.com/)
