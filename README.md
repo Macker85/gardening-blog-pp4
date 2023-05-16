@@ -1,10 +1,10 @@
 # Gardening Blog
 
-![Am I Responsive](docs/am-i-responsive.PNG)
+![Am I Responsive](docs/am-i-responsive.png)
 
 **Developer: Paul McCormack**
 
-💻 [Visit live website](https://gardening-blog.herokuapp.com/)
+[Visit live website](https://gardening-blog.herokuapp.com/)
 
 
 ## Table of Contents
@@ -35,7 +35,7 @@
 
 ### About
 
-This Gardening blog is a website built to give users a place to go to get tips for domestic gardening. I got the idea for this from tlking to people that live near me that had a building interest in their gardens.
+This Gardening blog is a website built to give users a place to go to get tips for domestic gardening. I got the idea for this from tlking to people that live near me that had a building interest in their gardens. In particular a neighbour that had a specific interest who I treated as the client.
 <hr>
 
 ### User Goals
@@ -45,6 +45,7 @@ This Gardening blog is a website built to give users a place to go to get tips f
 - To be able to give feedback on the information I am reading with likes or dislikes.
 - To engage with the author through messaging.
 - Find a social aspect through social media links.
+- Get in touch with queries and questions about gardening.
 
 ### Site Owner Goals
 
@@ -52,6 +53,7 @@ This Gardening blog is a website built to give users a place to go to get tips f
 - To help people engage with eachother with dialogue and reactions.
 - Ensure ease of use with pagination.
 - Drive traffic to social media accounts.
+- Get feedback that 
 <hr>
 
 
@@ -109,19 +111,8 @@ This Gardening blog is a website built to give users a place to go to get tips f
 24. As a Site Owner I can validate data entered into my site so that all submitted data is correct to avoid errors (Must have) -->
 
 
-### Kanban, Epics & User Stories
+### Kanban
 - GitHub Kanban was used to track all open user stories
-- Epics were created using the milestones feature
-- Backlog, In Progress, Done headings were used in the kanban
-
-<details><summary>Epics</summary>
-
-![Epics](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-epics.PNG)
-![Epic 1](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-epic-1.PNG)
-![Epic 2](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-epic-2.PNG)
-![Epic 3](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-epic-3.PNG)
-![Epic 4](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-epic-4.PNG)
-</details>
 
 <details><summary>User Stories</summary>
 
@@ -131,8 +122,9 @@ This Gardening blog is a website built to give users a place to go to get tips f
 
 <details><summary>Kanban</summary>
 
-![Kanban mid](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-mid.PNG)
-![Kanban finish](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-finish.PNG)
+![Kanban mid](docs/kanban1.png)
+![Kanban mid](docs/kanban2.png)
+![Kanban finish]()
 
 </details>
 
@@ -165,65 +157,6 @@ The site was designed to have this feeling of familiarity for the user with the 
 
 The footer contains all relevant social media links to increase popularity with usage and increase the traffic.
 
-
-##### User Model
-<!-- The User Model contains the following:
-- user_id
-- password
-- last_login
-- is_superuser
-- username
-- first_name
-- last_name
-- email
-- is_staff
-- is_active
-- date_joined -->
-
-
-##### Booking Model
-The Booking Model contains the following:
-- booking_id (PrimaryKey)
-- created_date
-- requested_date
-- requested_time
-- table (ForeignKey)
-- guest (ForeignKey)
-- seats
-- guest_count
-
-##### Post Model
-The Post Model contains the following:
-- title
-- post_id (PrimaryKey)
-- author (ForeignKey)
-- created_date
-- updated_date
-- content
-- featured_image
-- excerpt
-- slug
-- status
-
-##### Comment Model
-The Comment Model contains the following:
-- post (ForeignKey)
-- name
-- email
-- body
-- created_date
-- approved
-- Meta: created_on
-
-##### ContactUs Model
-The ContactUs Model contains the following:
-- contact_id (PrimaryKey)
-- name (ForeignKey)
-- email (ForeignKey)
-- phone (ForeignKey)
-- body
-
-
 ## Technologies Used
 
 ### Languages & Frameworks
@@ -237,17 +170,15 @@ The ContactUs Model contains the following:
 
 ### Libraries & Tools
 
-<!-- - [Am I Responsive](http://ami.responsivedesign.is/)
-- [Bootstrap v3.9](https://getbootstrap.com/)
+- [Am I Responsive](http://ami.responsivedesign.is/)
+- [Bootstrap v5](https://getbootstrap.com/)
 - [Cloudinary](https://cloudinary.com/)
 - [Favicon.io](https://favicon.io)
-- [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
 - [Font Awesome](https://fontawesome.com/)
 - [Git](https://git-scm.com/)
 - [GitHub](https://github.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [Heroku Platform](https://id.heroku.com/login)
-- [jQuery](https://jquery.com)
 - [Postgres](https://www.postgresql.org/)
 - [Summernote](https://summernote.org/)
 - Validation:
@@ -256,7 +187,7 @@ The ContactUs Model contains the following:
   - [JShint](https://jshint.com/)
   - [Pycodestyle(PEP8)](https://pypi.org/project/pycodestyle/)
   - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
-  - [Wave Validator](https://wave.webaim.org/) -->
+  - [Wave Validator](https://wave.webaim.org/)
 
 ##### Back to [top](#table-of-contents)
 
@@ -327,67 +258,6 @@ The ContactUs Model contains the following:
 ![Logout](docs/features/feature-logout.PNG)
 </details>
 
-
-### Book
-- Allows the user to book a table using the booking form
-- Messages are displayed if the data is not valid such as phone number lenght is too short and the email address is not a valid format
-
-<details><summary>See feature images</summary>
-
-![Book](docs/features/feature-book-table.PNG)
-![Book](docs/features/feature-book-table2.PNG)
-![Book](docs/features/feature-book-table3.PNG)
-</details>
-
-
-### My Bookings
-- Allows the user to see all their bookings in a paginated layout, 4 per page
-- If the booking is older than today it is automatically expired for the user
-- Status of the booking is displayed, awaiting confirmation and when approved will then change to confirmed status for the user
-
-<details><summary>See feature images</summary>
-
-![My Bookings](docs/features/feature-my-bookings.PNG)
-</details>
-
-
-### Edit Booking
-- Allows the user to edit their booking to another date, time, guest count and table
-<details><summary>See feature images</summary>
-
-![Edit Booking](docs/features/feature-edit-booking.PNG)
-![ImaEdit Bookingge](docs/features/feature-edit-booking2.PNG)
-</details>
-
-
-### Cancel Booking 
-- Allows the user to cancel their booking, asks user are they sure
-  
-<details><summary>See feature images</summary>
-
-![Cancel Booking](docs/features/feature-cancel-booking.PNG)
-</details>
-
-
-### Food Menu
-- The food menu displays all available foods on the menu
-- Menu is seperated by starters, mains and desserts
-- Items can be added via the admin panel in the backend by staff
-- Staff can create, update and delete foods via the admin panel
-  
-<details><summary>See feature images</summary>
-
-![Food Menu](docs/features/feature-food-menu.PNG)
-</details>
-
-
-### Drinks Menu
-- The drinks menu displays all available foods on the menu
-- Menu is seperated by wines, beers and cocktails
-- Items can be added via the admin panel in the backend by staff
-- Staff can create, update and delete foods via the admin panel 
-  
-<details><summary>See feature images</summary>
 
 ![Drinks Menu](docs/features/feature-drinks-menu.PNG)
 </details>
