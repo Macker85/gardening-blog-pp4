@@ -1300,6 +1300,7 @@ Images were all soursed from https://www.pexels.com/
 ### Code
 
 Code was worked along side the Code institute "I think therefore I blog" walkthrough and modified to suit.
+I also took used https://github.com/ArronBeale/CI_PP4_the_diplomat for inspiration and reference.
 
 ##### Back to [top](#table-of-contents)<hr>
 
